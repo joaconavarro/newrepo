@@ -15,9 +15,7 @@
     padding-left: 180px;
     }
     .num-area{
-    	animation: animate 7s linear infinite;
-        -webkit-transform-style: preserve-3d;
-        -webkit-transform-origin: 180px 0 0;
+    	
     }
     .num-area div{
     	position: absolute;
@@ -25,6 +23,12 @@
         width:200px;
         background: #971f61;
     }
+    .num-area div:hover{
+        animation: animate 7s linear infinite;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform-origin: 180px 0 0;
+    }
+
     span{
     	display: inline-block;
         height: 200px;
@@ -80,7 +84,14 @@
     transform: rotateY(316deg) translateX(180px);
     padding: 0 0 0 150px;
     }
-    
+    @keyframes animate{
+    from{
+    	transform: rotateY(0deg);
+    }
+    to{
+    transform: rotateY(360deg);
+    }
+    }
 </style>
 </head>
 <body>
@@ -98,14 +109,7 @@
         <div><span><p>10</p></span></div>
         </div>
     </div>
-    <!-- @keyframes animate{
-    from{
-    	transform: rotateY(0deg);
-    }
-    to{
-    transform: rotateY(360deg);
-    }
-    }
+    <!-- 
 -->
 </body>
 </html>

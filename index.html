@@ -14,19 +14,10 @@
     -webkit-perspective: 1500px;
     padding-left: 180px;
     }
-    .num-area{
-    	
-    }
     .num-area div{
     	position: absolute;
         height: 250px;
         width:200px;
-        background: #971f61;
-    }
-    .num-area:hover{
-        animation: animate 7s linear infinite;
-        -webkit-transform-style: preserve-3d;
-        -webkit-transform-origin: 180px 0 0;
     }
 
     span{
@@ -46,51 +37,57 @@
     }
     .num-area div:nth-child(1){
     transform: rotateY(280deg) translateX(180px);
-    padding: 0 0 0 150px;
+    padding: 0 0 0 150px;    
+    background: #e0c6d4;
+    }
+    .num-area div:nth-child(1):hover{
+        background: #43724f;
     }
     .num-area div:nth-child(2){
     transform: rotateY(268deg) translateX(180px);
     padding: 0 0 0 150px;
+        background: #e6c1d5;
+
     }
     .num-area div:nth-child(3){
     transform: rotateY(260deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #dfa4c3;
     }
     .num-area div:nth-child(4){
     transform: rotateY(248deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #d66da5;
     }
     .num-area div:nth-child(5){
     transform: rotateY(236deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #d14690;
     }
     .num-area div:nth-child(6){
     transform: rotateY(292deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #ce2e83;
     }
     .num-area div:nth-child(7){
     transform: rotateY(224deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #961a5c;
     }
     .num-area div:nth-child(8){
     transform: rotateY(304deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #770f47;
     }
     .num-area div:nth-child(9){
     transform: rotateY(212deg) translateX(180px);
     padding: 0 0 0 150px;
+    background: #47092a;
     }
     .num-area div:nth-child(10){
     transform: rotateY(316deg) translateX(180px);
     padding: 0 0 0 150px;
-    }
-    @keyframes animate{
-    from{
-    	transform: rotateY(0deg);
-    }
-    to{
-    transform: rotateY(360deg);
-    }
+    background: #36031e;
     }
 </style>
 </head>
